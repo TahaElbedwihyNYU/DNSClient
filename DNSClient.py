@@ -39,14 +39,12 @@ def compare_dns_servers(domainList,question_type):
 def local_external_DNS_output(question_type):    
     print("Local DNS Server")
     for domain_name in domainList:
-        ip_address = compaer_dns_servers(domain_name,question_type)
+        ip_address = compare_dns_servers(domain_name,question_type)
         print(f"The IP address of {domain_name} is {ip_address}")
 
-
     print("\nPublic DNS Server")
-
     for domain_name in domainList:
-        ip_address = compaer_dns_servers(domain_name,question_type)
+        ip_address = compare_dns_servers(domain_name,question_type)
         print(f"The IP address of {domain_name} is {ip_address}")
         
         
