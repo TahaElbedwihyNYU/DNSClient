@@ -46,7 +46,7 @@ def local_external_DNS_output(question_type):
     print("\nPublic DNS Server")
 
     for domain_name in domainList:
-        ip_address = ?????(domain_name,question_type)
+        ip_address = compaer_dns_servers(domain_name,question_type)
         print(f"The IP address of {domain_name} is {ip_address}")
         
         
